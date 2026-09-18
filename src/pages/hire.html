@@ -1,0 +1,83 @@
+
+<section class="page-hero">
+  <div class="container">
+    <p class="breadcrumb"><a href="{{R}}index.html">Home</a> / Hire Talent</p>
+    <h1>Hire the <span class="grad-text">next generation</span> — before everyone else does.</h1>
+    <p class="lead">Reach motivated students and young professionals who have proven themselves in hackathons, creator challenges and pitch competitions. Post internships, jobs, gigs and ambassador roles.</p>
+    <div class="hero-cta"><a href="#post" class="btn btn-primary btn-lg">Post a role — free</a><a href="#talent" class="btn btn-ghost btn-lg">I'm looking for work</a></div>
+  </div>
+</section>
+<section style="padding-top:10px">
+  <div class="container grid g4">
+    <div class="card feature"><div class="ico">🎯</div><h3>Pre-vetted</h3><p>Candidates tagged by contest results, skills and projects.</p></div>
+    <div class="card feature"><div class="ico">💸</div><h3>Salary-transparent</h3><p>Every listing shows pay, so candidates trust it and apply faster.</p></div>
+    <div class="card feature"><div class="ico">🌍</div><h3>Global &amp; remote</h3><p>Hire in your city or anywhere in the world.</p></div>
+    <div class="card feature"><div class="ico">🏆</div><h3>Sponsor-to-hire</h3><p>Run a sponsored challenge and hire the winners.</p></div>
+  </div>
+</section>
+<section class="alt" id="post">
+  <div class="container layout-side">
+    <div class="form-card">
+      <h2>Post an internship, job or gig</h2>
+      <p>Free standard listings. Featured listings get top placement, newsletter inclusion and social promotion.</p>
+      <form data-lead-form="employer-job" novalidate data-success="Thanks! We review listings within 24 hours and email you when it's live.">
+        <div class="row2">
+          <div class="field"><label for="jCo">Company / organisation</label><input id="jCo" name="company" required autocomplete="organization"></div>
+          <div class="field"><label for="jSite">Website</label><input id="jSite" name="website" type="url" placeholder="https://"></div>
+        </div>
+        <div class="row2">
+          <div class="field"><label for="jRole">Role title</label><input id="jRole" name="role" required></div>
+          <div class="field"><label for="jType">Type</label><select id="jType" name="type"><option>Internship</option><option>Full-time</option><option>Part-time</option><option>Freelance / gig</option><option>Ambassador</option></select></div>
+        </div>
+        <div class="row3">
+          <div class="field"><label for="jLoc">Location</label><input id="jLoc" name="location" placeholder="City or Remote" required></div>
+          <div class="field"><label for="jPay">Pay range</label><input id="jPay" name="pay" placeholder="e.g. $20–25/hr" required></div>
+          <div class="field"><label for="jDead">Apply by</label><input id="jDead" name="deadline" type="date"></div>
+        </div>
+        <div class="field"><label for="jSkills">Skills required</label><input id="jSkills" name="skills" placeholder="e.g. Python, Figma, video editing"></div>
+        <div class="field"><label for="jDesc">Description</label><textarea id="jDesc" name="description" required></textarea></div>
+        <div class="row2">
+          <div class="field"><label for="jName">Your name</label><input id="jName" name="contact_name" required></div>
+          <div class="field"><label for="jEmail">Work email</label><input id="jEmail" type="email" name="email" required></div>
+        </div>
+        <div class="field"><label>Listing type</label>
+          <div class="options" style="margin:6px 0 0">
+            <label class="opt"><input type="radio" name="plan" value="free" checked><span>Standard — Free</span></label>
+            <label class="opt"><input type="radio" name="plan" value="featured"><span>⭐ Featured — $99 / 30 days</span></label>
+          </div>
+        </div>
+        <label class="check"><input type="checkbox" name="hire_winners" value="yes"> Introduce me to contest winners who match this role.</label>
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Submit listing</button>
+      </form>
+    </div>
+    <aside>
+      <div class="card"><h3>Hiring at scale?</h3><p style="font-size:.93rem">Sponsor a hackathon or challenge around your real problem. You get branded exposure, a ranked talent shortlist and the IP terms you set.</p><a href="{{R}}advertise.html#packages" class="btn btn-ghost btn-block">Sponsor-to-hire packages</a></div>
+      <div class="ad-slot tall" data-ad="sidebar"></div>
+    </aside>
+  </div>
+</section>
+<section id="talent">
+  <div class="container grid g2" style="align-items:start">
+    <div>
+      <p class="eyebrow">For students &amp; young pros</p>
+      <h2>Join the NextGR talent pool</h2>
+      <p>Create a talent profile once. Employers and sponsors search the pool for internships, gigs and paid challenges — and contest winners get priority intros.</p>
+      <ul class="list-plain"><li>✅ Free, forever</li><li>✅ You control who sees your contact details</li><li>✅ Get invited to paid challenges and hackathons</li><li>✅ Priority for NextGR's own paid roles</li></ul>
+      <div class="results-bar" style="margin-top:24px"><h3 style="margin:0">Latest internship programs</h3><a href="{{R}}opportunities.html?type=Internship">All →</a></div>
+      <div class="grid" data-opps="type:Internship" data-limit="2"></div>
+    </div>
+    <div class="form-card">
+      <h3>Create your talent profile</h3>
+      <form data-lead-form="talent-profile" novalidate data-success="Profile received! We'll notify you when a matching role or challenge opens.">
+        <div class="row2"><div class="field"><label for="tName">Full name</label><input id="tName" name="name" required></div><div class="field"><label for="tEmail">Email</label><input id="tEmail" type="email" name="email" required></div></div>
+        <div class="row2"><div class="field"><label for="tLoc">City, country</label><input id="tLoc" name="location" required></div><div class="field"><label for="tLevel">Level</label><select id="tLevel" name="level"><option>High school</option><option>Undergraduate</option><option>Graduate</option><option>Early-career (0–3 yrs)</option></select></div></div>
+        <div class="field"><label for="tSkills">Top skills</label><input id="tSkills" name="skills" placeholder="e.g. React, data analysis, video editing" required></div>
+        <div class="field"><label for="tPort">Portfolio / GitHub / LinkedIn</label><input id="tPort" name="portfolio" type="url" placeholder="https://"></div>
+        <div class="row2"><div class="field"><label for="tWant">Looking for</label><select id="tWant" name="looking_for"><option>Internship</option><option>Freelance / gigs</option><option>Full-time</option><option>Paid challenges</option></select></div><div class="field"><label for="tAvail">Available from</label><input id="tAvail" name="available" type="month"></div></div>
+        <div class="field"><label for="tCv">Résumé (optional)</label><input id="tCv" name="resume" type="file" accept=".pdf,.doc,.docx"><p class="form-note">Or email it to us after submitting.</p></div>
+        <label class="check"><input type="checkbox" name="consent_share" value="yes" required> Share my profile with verified NextGR employers and sponsors.</label>
+        <button class="btn btn-primary btn-block" type="submit">Join the talent pool</button>
+      </form>
+    </div>
+  </div>
+</section>
