@@ -1,0 +1,30 @@
+
+<section class="page-hero">
+  <div class="container narrow">
+    <p class="breadcrumb"><a href="{{R}}index.html">Home</a> / Submit an opportunity</p>
+    <h1>List your opportunity — <span class="grad-text">free</span></h1>
+    <p class="lead">Scholarships, competitions, fellowships, internships, grants, exchanges and free courses for young people. Every listing is reviewed within 48 hours.</p>
+  </div>
+</section>
+<section style="padding-top:10px">
+  <div class="container narrow">
+    <div class="form-card">
+      <form data-lead-form="opportunity-submission" novalidate data-success="Submitted! We'll review it within 48 hours and email you when it's live.">
+        <div class="row2"><div class="field"><label for="sOrg">Organisation</label><input id="sOrg" name="organisation" required></div><div class="field"><label for="sType">Type</label><select id="sType" name="type"><option>Scholarship</option><option>Competition</option><option>Fellowship</option><option>Internship</option><option>Grant / funding</option><option>Exchange / conference</option><option>Course</option></select></div></div>
+        <div class="field"><label for="sTitle">Title</label><input id="sTitle" name="title" placeholder="Organisation + Year + Benefit + Audience, e.g. “Acme 2027 $5,000 STEM Scholarship for Women”" required></div>
+        <div class="row3"><div class="field"><label for="sAmt">Amount / benefit</label><input id="sAmt" name="amount" placeholder="$5,000 / Fully funded"></div><div class="field"><label for="sDead">Deadline</label><input id="sDead" name="deadline" type="date"></div><div class="field"><label for="sRegion">Eligible region</label><input id="sRegion" name="region" placeholder="Global / USA / Africa…"></div></div>
+        <div class="field"><label for="sElig">Eligibility</label><textarea id="sElig" name="eligibility" required></textarea></div>
+        <div class="field"><label for="sUrl">Official application URL</label><input id="sUrl" name="url" type="url" placeholder="https://" required></div>
+        <div class="row2"><div class="field"><label for="sName">Your name</label><input id="sName" name="contact_name" required></div><div class="field"><label for="sEmail">Email</label><input id="sEmail" type="email" name="email" required></div></div>
+        <div class="field"><label>Boost it?</label>
+          <div class="options" style="margin:6px 0 0">
+            <label class="opt"><input type="radio" name="plan" value="free" checked><span>Free listing</span></label>
+            <label class="opt"><input type="radio" name="plan" value="featured"><span>⭐ Featured — $99 / 30 days</span></label>
+          </div>
+        </div>
+        <label class="check"><input type="checkbox" name="no_fee" value="yes" required> I confirm applicants are not charged any fee to apply.</label>
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Submit for review</button>
+      </form>
+    </div>
+  </div>
+</section>

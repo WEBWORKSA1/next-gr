@@ -1,0 +1,72 @@
+
+<section class="page-hero">
+  <div class="container">
+    <p class="breadcrumb"><a href="{{R}}index.html">Home</a> / Tools</p>
+    <h1>Free tools for <span class="grad-text">smarter decisions</span></h1>
+    <p class="lead">Find your future-proof career, calculate whether a course is worth it, and never miss another deadline.</p>
+    <div class="chips"><a class="chip" href="#quiz">🧭 Career quiz</a><a class="chip" href="#roi">📈 Skill ROI calculator</a><a class="chip" href="#planner">📅 Deadline planner</a></div>
+  </div>
+</section>
+
+<section id="quiz" style="padding-top:10px">
+  <div class="container narrow">
+    <div class="form-card">
+      <p class="eyebrow">Tool 1</p>
+      <h2>🧭 Future-proof career quiz</h2>
+      <p>Six questions. Instant result with a step-by-step learning path.</p>
+      <form id="careerQuiz" novalidate>
+        <div class="field"><label>1. On a free Saturday you'd rather…</label><select name="q1"><option value="">Choose…</option><option value="AI Builder,Full-Stack Developer">Build or tinker with tech</option><option value="Creator & Digital Marketer">Make videos, art or content</option><option value="Founder / Entrepreneur">Start a side hustle</option><option value="Green-Tech & Climate">Volunteer or be outdoors</option><option value="Data Analyst">Solve puzzles, analyse stats</option></select></div>
+        <div class="field"><label>2. Your favourite subject</label><select name="q2"><option value="">Choose…</option><option value="AI Builder,Data Analyst">Math</option><option value="Full-Stack Developer,AI Builder">Computer science</option><option value="Creator & Digital Marketer">Art / media / English</option><option value="Founder / Entrepreneur">Business / economics</option><option value="Green-Tech & Climate">Biology / geography</option></select></div>
+        <div class="field"><label>3. People describe you as…</label><select name="q3"><option value="">Choose…</option><option value="Founder / Entrepreneur">A leader / risk-taker</option><option value="Data Analyst,AI Builder">Analytical</option><option value="Creator & Digital Marketer">Creative &amp; expressive</option><option value="Full-Stack Developer">A builder / fixer</option><option value="Green-Tech & Climate">Caring about the planet</option></select></div>
+        <div class="field"><label>4. What matters most in a career?</label><select name="q4"><option value="">Choose…</option><option value="AI Builder,Full-Stack Developer">High salary &amp; demand</option><option value="Founder / Entrepreneur">Freedom &amp; ownership</option><option value="Green-Tech & Climate">Impact</option><option value="Creator & Digital Marketer">Fame &amp; creativity</option><option value="Data Analyst">Stability</option></select></div>
+        <div class="field"><label>5. Which AI headline excites you most?</label><select name="q5"><option value="">Choose…</option><option value="AI Builder">“New model beats doctors at diagnosis”</option><option value="Creator & Digital Marketer">“Solo creator hits 1M subscribers with AI”</option><option value="Founder / Entrepreneur">“Teen's AI startup raises seed round”</option><option value="Green-Tech & Climate">“AI cuts city energy use 20%”</option><option value="Data Analyst,Full-Stack Developer">“Open-source tool used by millions”</option></select></div>
+        <div class="field"><label>6. How do you like to work?</label><select name="q6"><option value="">Choose…</option><option value="Full-Stack Developer,AI Builder">Deep focus, heads-down</option><option value="Creator & Digital Marketer,Founder / Entrepreneur">In public, with an audience</option><option value="Data Analyst">With clear data and answers</option><option value="Green-Tech & Climate,Founder / Entrepreneur">On a mission with a team</option></select></div>
+        <button class="btn btn-primary btn-lg" type="submit">Show my path</button>
+      </form>
+      <div id="careerResult" class="result-box" hidden></div>
+    </div>
+  </div>
+</section>
+
+<div class="container"><div class="ad-slot" data-ad="inContent"></div></div>
+
+<section id="roi" class="alt">
+  <div class="container grid g2" style="align-items:start">
+    <div>
+      <p class="eyebrow">Tool 2</p>
+      <h2>📈 Skill ROI calculator</h2>
+      <p>Is that bootcamp or certificate worth it? Enter the numbers and see your payback period and 5-year return.</p>
+      <form id="roiForm" class="card" onsubmit="return false">
+        <div class="row2"><div class="field"><label for="rCost">Course cost ($)</label><input id="rCost" type="number" min="0" value="500"></div><div class="field"><label for="rHours">Total hours</label><input id="rHours" type="number" min="1" value="120"></div></div>
+        <div class="field"><label for="rWeekly">Hours you can study per week</label><input id="rWeekly" type="number" min="1" value="8"></div>
+        <div class="row2"><div class="field"><label for="rNow">Current yearly income ($)</label><input id="rNow" type="number" min="0" value="30000"></div><div class="field"><label for="rAfter">Expected income after ($)</label><input id="rAfter" type="number" min="0" value="45000"></div></div>
+      </form>
+    </div>
+    <div class="card" style="position:sticky;top:90px">
+      <h3>Your result</h3>
+      <div class="kpi"><span>Time to finish</span><b id="oWeeks">—</b></div>
+      <div class="kpi"><span>Income gain</span><b id="oGain">—</b></div>
+      <div class="kpi"><span>Payback period</span><b id="oPayback">—</b></div>
+      <div class="kpi"><span>5-year net gain</span><b id="oFive">—</b></div>
+      <div class="kpi"><span>5-year ROI</span><b id="oROI" class="grad-text">—</b></div>
+      <p class="form-note">Estimates only. Tip: most skills in our academy can be learned free first — pay only for the credential.</p>
+      <a href="{{R}}skills.html" class="btn btn-ghost btn-block">Find free courses →</a>
+    </div>
+  </div>
+</section>
+
+<section id="planner">
+  <div class="container narrow">
+    <div class="form-card">
+      <p class="eyebrow">Tool 3</p>
+      <h2>📅 Deadline planner</h2>
+      <p>Track every application in one place and export to Google Calendar, Apple Calendar or Outlook with a 7-day reminder. Saved privately in your browser.</p>
+      <form id="plannerForm" novalidate>
+        <div class="field"><label for="plannerPick">Quick-add from NextGR listings</label><select id="plannerPick"><option value="">Choose a program (optional)…</option></select></div>
+        <div class="row2"><div class="field"><label for="pName">Application name</label><input id="pName" placeholder="e.g. Chevening"></div><div class="field"><label for="pDate">Deadline</label><input id="pDate" type="date"></div></div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn btn-primary" type="submit">Add deadline</button><button class="btn btn-ghost" type="button" id="icsBtn">⬇ Export to calendar (.ics)</button></div>
+      </form>
+      <ul class="list-plain" id="plannerList" style="margin-top:18px"></ul>
+    </div>
+  </div>
+</section>
